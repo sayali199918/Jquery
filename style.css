@@ -1,0 +1,29 @@
+/* #heading1{
+    color: aqua;
+    background-color: black;
+
+}
+#heading3{
+    color: aqua;
+    background-color: black;
+
+} */
+
+
+
+.mydives{
+    border:2px solid red;
+    margin:5px;
+    padding:10px;
+
+}
+.mycube{
+    width: 50px;
+    height:50px ;
+  
+    
+    background-color: rgb(62, 25, 97);
+    opacity: 0.4;
+    position: absolute;
+    padding: 20px;
+}

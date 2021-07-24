@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+    <button id="btn3">Toggle</button>
+    
+</head>
+<body>
+    <h2 id="heading1" class="abc"> Callback & Chaining Effects</h2>
+    
+<div id="firstdiv" class="mydives">
+    <p>Lorem, ipsum.</p>
+
+
+</div>
+
+<div id="second" class="mydives">
+    
+<p>Lorem ipsum dolor sit amet.</p>
+
+</div>
+<div id="thirddiv" class="mydives">
+    <ul>
+        <li>home</li>
+        <li>about us</li>
+        <li>aaaaaacd</li>
+
+       
+    </ul>
+
+</div>
+
+
+   
+    
+
+
+</body>
+<script src="jquery-3.6.0.js"></script>
+<script>
+
+$(document).ready(function(){
+
+    function printMsg()
+    {
+        alert("Effect Done");
+    }
+
+
+
+
+
+    $("#btn3").click(function(){
+
+        // $("#firstdiv").slideToggle(3000,function(){     //callbackFunction (Function pass as a parameter) //asynchronus it doesnot match 
+        //     alert("slide toggling done");
+
+        // });
+        // $("#firstdiv").slideToggle(3000,printMsg);
+
+        // $("#firstdiv").slideUp(2000);   //chaning callback
+        // $("#firstdiv").slideDown(2000);
+
+        $("#firstdiv").slideUp(2000).slideDown(2000).fadeOut(1000).fadeIn(3000); //chaning effects
+
+      
+     
+    });
+
+
+   
+
+
+
+});
+
+
+
+
+
+
+</script>
+</html>

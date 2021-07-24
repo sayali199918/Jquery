@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <button id="btn1">click me1</button>
+    
+    <button id="btn2">click me2</button>
+    <button id="btn3">Animate</button>
+    
+</head>
+<body>
+    <h2 id="heading1" class="abc"> Animation Effect in jQuery</h2>
+  
+<div id="firstdiv" class="mydives">
+    <p>Lorem, ipsum.</p>
+
+
+</div>
+
+<div id="second" class="mydives">
+    
+<p>Lorem ipsum dolor sit amet.</p>
+
+</div>
+<div id="thirddiv" class="mydives">
+    <ul>
+        <li>home</li>
+        <li>about us</li>
+        <li>aaaaaacd</li>
+
+       
+    </ul>
+
+</div>
+<div id="cube"  class="mycube">
+    <p>Cube</p>
+
+
+</div>
+
+   
+    
+
+
+</body>
+<script src="jquery-3.6.0.js"></script>
+<script>
+
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#cube").animate({
+
+            left:'150px',
+            opacity:'1',
+            width:'100px',
+            height:'100px'
+
+
+        },1000)
+
+    });
+
+
+   
+
+
+
+});
+
+
+
+
+
+
+</script>
+</html>
